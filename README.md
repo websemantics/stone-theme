@@ -46,7 +46,7 @@ Need help or have a question? post a questions at [StackOverflow](https://stacko
 
 *Please don't use the issue trackers for support/questions.*
 
-Star this repository if you find this project useful and to show support of the work that has gone into developing this theme.
+Star this repository to show support or if you find this project useful.
 
 ## Contribution
 
