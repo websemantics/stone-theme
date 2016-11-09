@@ -30,7 +30,7 @@ composer require websemantics/stone-theme
 Edit `.env` file and change the value of `ADMIN_THEME` to,
 
 ```
-  ADMIN_THEME=websemantics.theme.stone
+ADMIN_THEME=websemantics.theme.stone
 ```
 
 ## Notifications
@@ -38,7 +38,7 @@ Edit `.env` file and change the value of `ADMIN_THEME` to,
 Bonus ui to manage app notification is provided with this theme. To enable, edit `resources/config/config.php` and change the value of `notification` to true,
 
 ```
-  'notification'           => env('STONE_NOTIFICATION', true),
+'notification'           => env('STONE_NOTIFICATION', true),
 ```
 
 ![Notification](https://github.com/websemantics/stone-theme/raw/master/docs/stone-4.png "Notification")
