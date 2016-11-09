@@ -42,7 +42,7 @@ for example,
 
 ## Support
 
-Star this repository to show support or if you find this project useful.
+Star this repository to show support or if you find this project useful. Many many hours was spend to develop this theme.
 
 *Please don't use the issue trackers for support/questions.*
 
