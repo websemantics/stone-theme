@@ -58,7 +58,7 @@ Stone theme is built with `less` and is dead easy to customize by changing theme
 To change the dominant/primary theme color, change the value of `brand-primary` in `resources/config/variables.php` as follows, 
 
 ```
-'brand-primary'          => '#665884',
+'brand-primary'          => '#43AAC5',
 ```
 
 ![Theme Customization](https://github.com/websemantics/stone-theme/raw/master/docs/stone-5.png "Theme Customization")
