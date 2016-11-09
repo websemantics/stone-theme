@@ -15,6 +15,10 @@
 ```
 > Built on the popular open source project [AdminLTE](https://almsaeedstudio.com/themes/AdminLTE/index2.html), this theme is easy to install and customize with a slick ui and intuitive user experience making PyroCMS a more pleasurable framework to work with.
 
+![Login](https://github.com/websemantics/stone-theme/raw/master/docs/stone-1.png "Login")
+
+![Stone Theme](https://github.com/websemantics/stone-theme/raw/master/docs/stone-2.png "Stone Theme")
+
 ## Install
 
 In your project folder, require the theme package with `composer`,
@@ -26,19 +30,30 @@ composer require websemantics/stone-theme
 Edit `.env` file and change the value of `ADMIN_THEME` to,
 
 ```
-ADMIN_THEME=websemantics.theme.stone
+  ADMIN_THEME=websemantics.theme.stone
 ```
 
-## Customize
+## Notifications
 
-Stone theme is built with `less` and is easy to customize by changing themes variables in `resources/less/theme/variables.less`. 
-A straightforward change is altering the theme primary color which would reflect in the sidebar background color, headers color and other theme items by changing a single value , `brand-primary` in `resources/config/variables.php`.
+Bonus ui to manage app notification is provided with this theme. To enable, edit `resources/config/config.php` and change the value of `notification` to true,
 
-for example, 
+```
+  'notification'           => env('STONE_NOTIFICATION', true),
+```
+
+![Notification](https://github.com/websemantics/stone-theme/raw/master/docs/stone-4.png "Notification")
+
+## Theme Customization
+
+Stone theme is built with `less` and is dead easy to customize by changing themes variables in `resources/less/theme/variables.less`. 
+
+To change the dominant/primary theme color, change the value of `brand-primary` in `resources/config/variables.php` as follows, 
 
 ```
 'brand-primary'          => '#665884',
 ```
+
+![Theme Customization](https://github.com/websemantics/stone-theme/raw/master/docs/stone-5.png "Theme Customization")
 
 ## Support
 
