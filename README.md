@@ -10,7 +10,7 @@
     |_      /  \ |  |  |  |     ||  |  ||   [_       |  |  |  |  ||   [_ |   |   ||   [_
      /      \    |  |  |  |     ||  |  ||     |      |  |  |  |  ||     ||   |   ||     |
     /        \___|  |__|   \___/ |__|__||_____|      |__|  |__|__||_____||___|___||_____|
-   /                  | Responsive PyroCMS 3 admin theme built with AdminLTE 2
+   /                  | Responsive  admin theme for PyroCMS 3
   ╰───────────────────╯ 
 ```
 > Built on the popular open source project [AdminLTE](https://almsaeedstudio.com/themes/AdminLTE/index2.html), this theme is easy to install and customize with a slick ui and intuitive user experience making PyroCMS a more pleasurable framework to work with.
