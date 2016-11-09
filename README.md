@@ -35,7 +35,7 @@ ADMIN_THEME=websemantics.theme.stone
 
 ## Notifications
 
-Bonus ui to manage app notification is provided with this theme. To enable, edit `resources/config/config.php` and change the value of `notification` to true,
+Bonus ui to manage app notifications is provided with this theme. To enable, edit `resources/config/config.php` and change the value of `notification` to true,
 
 ```
 'notification'           => env('STONE_NOTIFICATION', true),
