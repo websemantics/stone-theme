@@ -36,7 +36,9 @@ A straightforward change is altering the theme primary color which would reflect
 
 for example, 
 
+```
 'brand-primary'          => '#665884',
+```
 
 ## Support
 
