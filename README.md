@@ -73,7 +73,7 @@ Star this repository to show support or if you find this project useful. Need he
 
 ## Contribution
 
-Contributions to the project is accepted in the form of feedback, bug reports and even better - pull requests :)
+Contributions to this project is accepted in the form of feedback, bug reports and even better - pull requests :)
 
 ## Resources
 
