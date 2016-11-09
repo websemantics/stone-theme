@@ -55,11 +55,13 @@ The screenshot above shows a minimized sidebar with plenty of space to spare.
 
 Stone theme is built with `less` and is dead easy to customize by changing themes variables in `resources/less/theme/variables.less`. 
 
-To change the dominant/primary theme color, change the value of `brand-primary` in `resources/config/variables.php` as follows, 
+For example, to change the dominant/primary theme color, simply change the value of `brand-primary` variable in `resources/config/variables.php` as follows, 
 
 ```
 'brand-primary'          => '#43AAC5',
 ```
+
+That's it!
 
 ![Theme Customization](https://github.com/websemantics/stone-theme/raw/master/docs/stone-5.png "Theme Customization")
 
