@@ -11,6 +11,6 @@ return [
   |
   */
   
-  'notification'           => env('STONE_NOTIFICATION', false),
+  'notification'           => env('STONE_NOTIFICATION', true),
 
 ];
