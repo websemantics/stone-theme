@@ -1,0 +1,35 @@
+{% extends "theme::layouts/login" %} {% block content %}
+
+<div class="login-box">
+  <div class="login-logo">
+      {{ image('theme::img/logo.svg').data()|raw }}
+  </div>
+  <div class="login-box-body">
+    <p class="login-box-msg">Login to start your session</p>
+        {% include "theme::partials/messages" %} {{ form_open({'method': 'post'}) }}
+        <div class="form-group">
+            {% if setting_value('anomaly.module.users::login') == 'username' %}
+            <label>Username</label>
+            {{ form_text("username", null, {'class': 'form-control', 'placeholder': 'Username'}) }} {% else %}
+            <label>Email</label>
+            {{ form_email("email", null, {'class': 'form-control'}) }} {% endif %}
+        </div>
+        <div class="form-group">
+            <label>Password</label>
+            {{ form_password('password', {'class': 'form-control'}) }}
+        </div>
+        <div class="form-group checkbox">
+            <label>
+                {{ form_checkbox("remember", null, false, {'id': 'remember'}) }} {{ trans('anomaly.module.users::field.remember_me.name') }}
+            </label>
+        </div>
+        <div class="form-group last">
+            <button type="submit" value="Login" class="btn btn-primary btn-block">
+                {{ trans('anomaly.module.users::button.login') }}
+            </button>
+        </div>
+        {{ form_close() }}
+  </div>
+</div>
+
+{% endblock %}

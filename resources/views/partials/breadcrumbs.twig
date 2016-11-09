@@ -1,0 +1,11 @@
+{% if template.breadcrumbs %}
+    <ol class="breadcrumb">
+        {% for breadcrumb, href in template.breadcrumbs %}
+            <li class="{{ loop.last ? 'active' }}">
+                <a href="{{ href }}">
+                    {{ trans(breadcrumb) }}
+                </a>
+            </li>
+        {% endfor %}
+    </ol>
+{% endif %}

@@ -1,0 +1,29 @@
+<li id="menu" class="dropdown user user-menu">
+    <a href="#" class="dropdown-toggle close-control-sidebar" data-toggle="dropdown">
+        <img src="https://gravatar.com/avatar/{{ md5(user().email) }}" class="user-image" alt="User Image">
+        <span class="hidden-xs">{{ user().display_name }}</span>
+    </a>
+    <ul class="dropdown-menu">
+        <li class="user-header">
+          <img class="media-object img-circle" alt="User Image" src="https://gravatar.com/avatar/{{ md5(user().email) }}">
+            <p>{{ user().display_name }}
+              {% for role in user().roles %}
+              <span class="label label-info">{{ role.name }}</span>&nbsp;
+              {% endfor %}
+              <small>{{ user().email }}</small>
+            </p>
+        </li>
+        <li class="user-footer">
+            <div class="pull-left">
+              <a href="{{ url('/') }}" target="_blank" class="btn btn-default btn-flat">
+                  <span class="sm-icon"></span><span class="sm-txt">{{ trans('websemantics.theme.stone::control_panel.view_site') }}</span>
+              </a>
+            </div>
+            <div class="pull-right">
+                <a href="{{ url('admin/logout') }}" class="btn btn-default btn-flat btn-block">
+                {{ trans('websemantics.theme.stone::control_panel.logout') }}
+                </a>
+            </div>
+        </li>
+    </ul>
+</li>

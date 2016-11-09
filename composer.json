@@ -1,0 +1,29 @@
+{
+    "name": "websemantics/stone-theme",
+    "type": "streams-addon",
+    "description": "Responsive PyroCMS 3 admin theme built with AdminLTE 2",
+    "keywords": [
+      "pyrocms",
+      "laravel",
+        "addon",
+        "theme"
+    ],
+    "homepage": "http://websemantics.com/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "websemantics",
+            "email": "suport@websemantics.com",
+            "homepage": "http://websemantics.com/",
+            "role": "Owner"
+        }
+    ],
+    "support": {
+        "email": "support@websemantics.com"
+    },
+    "autoload": {
+        "psr-4": {
+            "Websemantics\\StoneTheme\\": "src/"
+        }
+    }
+}

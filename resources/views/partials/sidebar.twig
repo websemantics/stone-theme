@@ -1,0 +1,40 @@
+{% set unread_count = count(user().unreadNotifications.get()) %}
+<aside class="main-sidebar">
+    <section class="sidebar">
+        {% if addon('search').installed %}
+          <form method="get" action="{{ url('admin/search') }}" class="sidebar-form">
+              <div class="input-group">
+                  <input type="text" class="form-control" placeholder="{{ trans('theme::control_panel.search') }}..." name="filter_term">
+                  <span class="input-group-btn">
+                    <button type="submit" name="search" id="search-btn" class="btn btn-flat">{{ icon('search') }}
+                    </button>
+                  </span>
+              </div>
+          </form>
+        {% endif %}
+        <ul class="sidebar-menu">
+          {% for link in template.cp.navigation %}
+              <li class="treeview{{ link.active ? ' active' }}">
+                <a href="{{ link.href }}">{{icon(addon(link.slug).icon)}} <span>{{trans(addon(link.slug).title)|raw}}</span>
+                  {% if link.slug == 'websemantics.module.notification' and unread_count > 0 %}
+                    <span class="pull-right-container">
+                      <span class="label label-warning pull-right">{{ unread_count }}</span>
+                    </span>
+                  {% endif %}
+                </a>
+                {% if link.active and count(template.cp.sections.root()) > 1 %}
+                  <ul class="treeview-menu">
+                    {% for section in template.cp.sections.root() %}
+                      <li class="{{ section.highlighted ? 'active' }} {{ section.class }}">
+                        <a {{ html_attributes(section.attributes) }}>
+                          <i class="fa fa-circle{{ section.highlighted ? '' : '-o' }}"></i>{{ trans(section.title)|raw }}
+                        </a>
+                      </li>
+                    {% endfor %}
+                  </ul>
+                {% endif %}
+              </li>
+          {% endfor %}
+        </ul>
+    </section>
+</aside>

@@ -1,0 +1,29 @@
+#footer {
+    border: 0;
+    background: @body-bg;
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: inline-block;
+
+        &.pull-right {
+            margin-top: -0.35em;
+        }
+
+        li {
+            display: inline-block;
+            font-size: @font-size-sm;
+
+            &:not(:last-child) {
+                margin-right: 0.75em;
+            }
+
+            &.footprint {
+                span {
+                    color: darken(@gray-lighter, 15%);
+                }
+            }
+        }
+    }
+}

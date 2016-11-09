@@ -1,0 +1,31 @@
+
+// Dark links against a light background
+.navbar-light {
+    .navbar-brand {
+        color: @navbar-light-active-color;
+        .hover-focus(@navbar-light-active-color)
+    }
+
+    .navbar-nav {
+
+        .nav-link + .nav-link {
+            margin-left: 1rem;
+        }
+
+        .nav-link {
+            color: @navbar-light-color;
+            .hover-focus(@navbar-light-hover-color);
+        }
+
+        .open > .nav-link,
+        .active > .nav-link,
+        .nav-link.open,
+        .nav-link.active {
+            .plain-hover-focus(@navbar-light-active-color);
+        }
+    }
+
+    .navbar-divider {
+        background-color: rgba(0, 0, 0, .075);
+    }
+}

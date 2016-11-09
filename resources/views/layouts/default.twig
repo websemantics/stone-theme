@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+    {% block metadata deferred %} {% include "theme::partials/metadata" %} {% endblock %}
+</head>
+<body class="hold-transition skin-stone sidebar-mini">
+   
+    <div class="wrapper">
+        {% include "theme::partials/navbar" %}
+        {% include "theme::partials/sidebar" %}
+        <div class="content-wrapper">
+          {% include "theme::partials/header" %}
+            <section class="content">
+              {% include "theme::partials/buttons" %}
+              <div class="container-fluid">
+                  {% include "theme::partials/messages" %}
+              </div>
+              {{ block('content') }}
+            </section>
+        </div>
+        {% include "theme::partials/footer" %}
+        {% include "theme::partials/push" %}
+        <div class="control-sidebar-bg"></div>
+    </div>
+    
+    {% include "theme::partials/modals" %}
+    {% include "theme::partials/js" %}
+
+</body>
+
+</html>

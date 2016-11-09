@@ -1,0 +1,151 @@
+// Variables
+//
+// Copy settings from this file into the provided `_custom.scss` to override
+// the Bootstrap defaults without modifying key, versioned files.
+
+// Table of Contents
+//
+// Colors
+// Options
+// Spacing
+// Body
+// Links
+// Grid breakpoints
+// Grid containers
+// Grid columns
+// Fonts
+// Components
+
+// General variable structure
+//
+// Variable format should follow the `@component-modifier-state-property` order.
+
+/* ------------------ Colors --------------------------- */
+
+// Grayscale and brand colors for use across Bootstrap.
+@purple: #61259e;
+@green: #24ce7b;
+@blue: #38b5e6;
+@orange: #f48714;
+@red: #f6303e;
+
+@gray-dark: #353535;
+@gray: #3e3e3e;
+@gray-light: #818a91;
+@gray-lighter: #eceeef;
+@gray-lightest: #f7f7f9;
+
+/* @brand-primary: #655A4B; */
+@brand-success: @green;
+@brand-info: @blue;
+@brand-warning: @orange;
+@brand-danger: @red;
+
+@logo-color: @black;
+
+@white: #ffffff;
+
+
+//== Alerts
+//
+//## Define alert colors, border radius, and padding.
+
+@alert-success-bg:            #46c35f;
+@alert-success-text:          #ffffff;
+@alert-success-border:        #46c35f;
+
+@alert-info-bg:               #2797ca;
+@alert-info-text:             #ffffff;
+@alert-info-border:           #2797ca;
+
+@alert-warning-bg:            #f29824;
+@alert-warning-text:          #ffffff;
+@alert-warning-border:        #f29824;
+
+@alert-danger-bg:             #fa424a;
+@alert-danger-text:           #ffffff;
+@alert-danger-border:         #fa424a;
+
+/* ------------------ Typography --------------------------- */
+
+// Font, line-height, and color for body text, headings, and more.
+
+@font-family-sans-serif: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-serif: Georgia, "Times New Roman", Times, serif;
+@font-family-monospace: Menlo, Monaco, Consolas, "Courier New", monospace;
+@font-family-base: @font-family-sans-serif;
+
+// Pixel value used to responsively scale all typography. Applied to the `<html>` element.
+@font-size-root: 16px;
+
+@font-size-base: 1rem;
+@font-size-lg: 1.25rem;
+@font-size-sm: .875rem;
+@font-size-xs: .75rem;
+
+@font-size-h1: 2.25rem;
+@font-size-h2: 1.75rem;
+@font-size-h3: 1.5rem;
+@font-size-h4: 1.25rem;
+@font-size-h5: 1.1rem;
+@font-size-h6: 1rem;
+
+/* ------------------ Admin --------------------------- */
+
+@body-bg: @brand-primary;
+@content-bg: #EBEDEF;
+
+@navbar-color: @brand-primary;
+@navbar-color-light: lighten(@navbar-color, 15%);
+
+/* left sidebar */
+@sidebar-dark-bg: @brand-primary;
+@sidebar-dark-hover-bg: darken(@brand-primary, 2);
+@sidebar-dark-color: lighten(@brand-primary, 45%);
+@sidebar-dark-hover-color: #fff;
+@sidebar-dark-submenu-bg: darken(@sidebar-dark-hover-bg, 4%);
+@sidebar-dark-submenu-color: darken(@sidebar-dark-color, 4%);
+@sidebar-dark-submenu-hover-color: #fff;
+
+/* right sidebar:push */
+@sidebar-width: 220px;
+@control-sidebar-width: 280px;
+
+@sidebar-light-bg: #fff;
+
+@border-color: darken(@content-bg, 5%);
+
+/* ------------------ Components --------------------------- */
+
+@border-radius: 0rem;
+@border-radius-lg: 0rem;
+@border-radius-sm: 0rem;
+
+// Cards
+@card-spacer-x: 1.25rem;
+@card-spacer-y: 1.5rem;
+@card-border-width: 1px;
+@card-border-radius: @border-radius;
+@card-border-color: @border-color;
+@card-border-radius-inner: @card-border-radius;
+@card-cap-bg: #f8f8f8;
+@card-bg: #ffffff;
+
+@card-link-hover-color: #ffffff;
+
+/* ------------------ Navbar --------------------------- */
+@spacer: 1rem;
+
+@navbar-border-radius: @border-radius;
+@navbar-padding-horizontal: @spacer;
+@navbar-padding-vertical: (@spacer / 2);
+
+@navbar-dark-color: rgba(255, 255, 255, .5);
+@navbar-dark-hover-color: rgba(255, 255, 255, .75);
+@navbar-dark-active-color: rgba(255, 255, 255, 1);
+@navbar-dark-disabled-color: rgba(255, 255, 255, .25);
+
+@navbar-light-color: rgba(0, 0, 0, .3);
+@navbar-light-hover-color: rgba(0, 0, 0, .6);
+@navbar-light-active-color: @navbar-color;
+@navbar-light-disabled-color: rgba(0, 0, 0, .15);

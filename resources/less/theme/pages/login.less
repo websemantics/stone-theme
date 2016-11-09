@@ -1,0 +1,45 @@
+.login-page,
+.register-page  {
+    background: @content-bg;
+    .login-box,
+    .register-box {
+        width: 450px;
+        margin: 10% auto;
+        @media (max-width: @screen-sm) {
+            width: 100%;
+            margin-top: 20px;
+        }
+        .login-logo {
+            svg {
+                width: 200px;
+                opacity: 0.2;
+                path {
+                    fill: #000;
+                }
+            }
+        }
+    }
+    .login-box-body,
+    .register-box-body {
+        margin-top: 20px;
+        padding: 40px 60px;
+        color:  @gray-light;
+        border-radius: 12px;
+        background-color: #fff;
+        box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
+        &:hover, &:focus {
+            position: relative;
+      }
+      .form-group {
+        .btn {
+            border: none;
+        }
+        label {
+            font-weight: bold;
+        }
+      }
+     .title {
+        padding: 0 0 15px 0;
+      }
+    }
+}

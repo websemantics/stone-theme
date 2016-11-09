@@ -1,0 +1,139 @@
+// Utilities
+@import "variables";
+@import "mixins";
+// Components
+@import "components/skin";
+@import "components/fullcalendar";
+@import "components/core";
+@import "components/forms";
+@import "components/checkbox";
+@import "components/animate";
+@import "components/cards";
+@import "components/navbar";
+@import "components/footer";
+// Special Pages
+@import "pages/login";
+
+/* TODO: temp style need to be done properly */
+
+.timeline > li {
+  i {
+    font-style: normal;
+    color : #818a91;
+  }
+  &.time-label > span {
+    &.bg-mute {
+      background-color: #ddd;
+    }
+  }
+  & > .fa {
+    background-color: #ddd;
+  }
+  & > .timeline-item {
+    &.bg-mute {
+      background-color: #ddd;
+      & > .timeline-header {
+        border-bottom: 1px solid #d3d3d3;
+      }
+    }
+    &.bg-award {
+      border: 2px solid #60be29;
+    }
+    & > .time {
+        font-size: 14px;
+    }
+  }
+}
+
+.small-box {
+  .inner {
+      padding: 15px;
+  }
+  .icon {
+      font-size: 90px;
+      svg {
+        margin-top: 17px;
+        height: 90px;
+        width: 90px;
+      }
+    }
+    &:hover {
+      .icon {
+        font-size: 90px;
+          svg {
+            height: 90px;
+          }
+        }
+    }
+  }
+
+table.table tr td {
+  vertical-align: middle;
+}
+
+.card .navbar-nav {
+    margin: 7.5px 0px;
+}
+
+.btn-sm, .btn-group-sm > .btn {
+  font-size: 12px!important;
+}
+
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.card {
+    border-radius: 5px;
+    min-height: 60px;
+     .navbar {
+         min-height: 0;
+         margin-bottom: 0;
+     }
+  }
+
+.controls {
+  .buttons {
+    float:right;
+  }
+  .actions {
+    float:left;
+  }
+}
+
+#buttons {
+    padding: 0;
+    float: right;
+    list-style: none;
+    display: inline-block;
+    margin-bottom: 13px;
+    // margin: 4em 1.5em 0 0;
+
+    .btn {
+        display: inline-block;
+
+        &:not(:first-of-type) {
+            margin-left: 1em;
+        }
+    }
+}
+
+.btn-group > .btn:first-child {
+    margin-left: 4px;
+}
+
+.container-fluid {
+  .alert {
+    margin-top: 50px;
+  }
+}
+
+.label-default {
+    background-color: @gray-light;
+    color: #fff;
+}
+
+.text-lg-right {
+    text-align: right !important;
+}

@@ -1,0 +1,189 @@
+/*
+ * Custom Skin
+ * -----------
+ */
+
+@import "../../admin/variables.less";
+@import "../../admin/mixins.less";
+
+/* skin-stone navbar */
+.skin-stone {
+    .btn-success {
+        color: darken(@sidebar-dark-hover-color, 1%);
+        background-color: darken(@sidebar-dark-bg, 1%);
+        border-color:  darken(@sidebar-dark-bg, 1%);
+      &:hover{
+        color: @sidebar-dark-hover-color;
+        background-color: @sidebar-dark-bg;
+        border-color:  @sidebar-dark-bg;
+      }
+    }
+    .control-sidebar-light {
+          border:0;
+        + .control-sidebar-bg {
+          border:0;
+        }
+        &.control-sidebar-open + .control-sidebar-bg {
+          box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
+        }
+        .nav-tabs.control-sidebar-tabs {
+            > li {
+                a, &.active a,
+                a:active, &.active a:active,
+                a:focus, &.active a:focus,
+                a:hover &.active a:hover, {
+                    border: 0;
+                    background: @sidebar-dark-bg;
+                    color: @sidebar-dark-color;
+                }
+                &.active a,
+                &.active a:active,
+                &.active a:focus,
+                &.active a:hover {
+                  color: @navbar-color;
+                  background: #fff;
+                }
+            }
+        }
+        /* Timeline */
+        .timeline {
+            li {
+                .timeline-item {
+                    box-shadow: none;
+                    border: 1px solid #eee;
+                }
+                &:last-child i {
+                    margin-top: -1px;
+                }
+            }
+        }
+    }
+    #footer,
+    .content-wrapper,
+    .right-side {
+        background-color: @content-bg;
+    }
+    .sidebar {
+        a {
+            font-weight: bold;
+        }
+    }
+    /* Navbar & Logo */
+    .main-header {
+        .navbar-toggle {
+            color: #333;
+        }
+        .navbar-brand {
+            color: #333;
+            border-right: 1px solid #eee;
+        }
+        .navbar {
+            .navbar-variant(#fff; #333; #999; #fff);
+            border-bottom: 1px solid @border-color;
+            > .sidebar-toggle {
+                color: @navbar-color;
+                border-right: 1px solid #eee;
+            }
+            > .sidebar-toggle:hover {
+                color: @navbar-color-light;
+            }
+
+            .navbar-nav {
+                > li > a {
+                    border-right: 1px solid #eee;
+                }
+                  > .user-menu.open {
+                    > .dropdown-toggle,
+                    > .dropdown-menu {
+                      background-color: @sidebar-dark-bg;
+                      color: @sidebar-dark-color;
+                      border-color: @sidebar-dark-bg;
+                    }
+                    > .dropdown-menu {
+                      box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.3);
+                      .user-footer {
+                        padding: 10px;
+                        border-color: @sidebar-dark-submenu-bg;
+                        background-color: @sidebar-dark-submenu-bg;
+                        .btn-default {
+                          border-color: @sidebar-dark-color;
+                          color: @sidebar-dark-color;
+                          background-color: @sidebar-dark-bg;
+                        }
+                      }
+                    }
+                }
+                @media (max-width: @screen-sm-max) {
+                  > .user-menu {
+                    > .dropdown-menu {
+                      right: 0px;
+                    }
+                  }
+                }
+            }
+            .navbar-custom-menu .navbar-nav,
+            .navbar-right {
+                > li {
+                    > a {
+                        color: @navbar-color;
+                        border-left: 1px solid #eee;
+                        border-right-width: 0;
+                        padding-bottom: 16px;
+                        &:hover {
+                          color: @navbar-color-light;
+                        }
+                    }
+                }
+            }
+        }
+        > .logo {
+            padding: 10px;
+            .logo-variant(@sidebar-dark-bg);
+            border-right: 1px solid @sidebar-dark-bg;
+            @media (max-width: @screen-header-collapse) {
+                border-right: none;
+            }
+            svg.logo {
+                height: 32px;
+                width: auto;
+                path {
+                    fill: #fff;
+                }
+            }
+            /*
+            > .logo-mini {
+                
+            }
+            > .logo-lg {
+            }*/
+        }
+        li.user-header {
+            background-color: @sidebar-dark-bg;
+        }
+    }
+    /* Content Header */
+    .content-header {
+        color: @brand-primary;
+        background: transparent;
+        box-shadow: none;
+        @media (max-width: @screen-sm-max) {
+            > .breadcrumb {
+                background: @sidebar-dark-bg;
+                > li > a, > li + li:before{
+                  color: @sidebar-dark-color;
+                }
+            }
+        }
+    }
+    /* Create the sidebar skin */
+    .skin-dark-sidebar(@sidebar-dark-hover-bg);
+    .pace {
+        .pace-progress {
+            background: #222;
+        }
+        .pace-activity {
+            border-top-color: #222;
+            border-left-color: #222;
+        }
+    }
+}

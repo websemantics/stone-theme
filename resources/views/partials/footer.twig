@@ -1,0 +1,19 @@
+<footer id="footer" class="main-footer">
+  <ul>
+      <li class="copyright">
+          &copy; {{ 'now'|date('Y') }} Web Semantics, Inc.
+      </li>
+  </ul>
+  <ul class="pull-right">
+      <li class="language">
+          <select class="c-select" onchange="window.location = '?_locale=' + this.value;">
+              {% for iso in config('streams::locales.supported')|keys %}
+                  <option value="{{ iso }}" {{ config('app.locale') == iso ? 'selected' }}>
+                      {{ trans('streams::locale.' ~ iso ~ '.name') }} ({{ iso }})
+                  </option>
+              {% endfor %}
+          </select>
+      </li>
+  </ul>
+</footer>
+{% include "theme::partials/help" %}
