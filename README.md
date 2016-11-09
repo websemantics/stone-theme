@@ -23,7 +23,7 @@ In your project folder, require the theme package with `composer`,
 composer require websemantics/stone-theme
 ```
 
-And finally, edit `.env` file and change value of `ADMIN_THEME` to,
+Edit `.env` file and change the value of `ADMIN_THEME` to,
 
 ```
 ADMIN_THEME=websemantics.theme.stone
