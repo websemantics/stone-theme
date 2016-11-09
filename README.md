@@ -42,11 +42,11 @@ for example,
 
 ## Support
 
-Need help or have a question? post a questions at [StackOverflow](https://stackoverflow.com/questions/tagged/stone-theme websemantics)
+Star this repository to show support or if you find this project useful.
 
 *Please don't use the issue trackers for support/questions.*
 
-Star this repository to show support or if you find this project useful.
+Need help or have a question? post a questions at [StackOverflow](https://stackoverflow.com/questions/tagged/stone-theme websemantics)
 
 ## Contribution
 
