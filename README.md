@@ -43,6 +43,14 @@ Bonus ui to manage app notification is provided with this theme. To enable, edit
 
 ![Notification](https://github.com/websemantics/stone-theme/raw/master/docs/stone-4.png "Notification")
 
+## Responsive
+
+This theme was built to work on desktop and mobile phones. It is also fleixible to adjust to your work flow with many layout configurations.
+
+![Responsive](https://github.com/websemantics/stone-theme/raw/master/docs/stone-2.png "Responsive")
+
+The screenshot above shows a minimized sidebar with plenty of space to spare.
+
 ## Theme Customization
 
 Stone theme is built with `less` and is dead easy to customize by changing themes variables in `resources/less/theme/variables.less`. 
