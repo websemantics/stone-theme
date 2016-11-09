@@ -47,7 +47,7 @@ Bonus ui to manage app notification is provided with this theme. To enable, edit
 
 This theme was built to work on desktop and mobile phones. It is also fleixible to adjust to your workflow with many layout configurations.
 
-![Responsive](https://github.com/websemantics/stone-theme/raw/master/docs/stone-2.png "Responsive")
+![Responsive](https://github.com/websemantics/stone-theme/raw/master/docs/stone-3.png "Responsive")
 
 The screenshot above shows a minimized sidebar with plenty of space to spare.
 
