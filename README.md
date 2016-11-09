@@ -67,7 +67,7 @@ That's it!
 
 ## Support
 
-Star this repository to show support or if you find this project useful. Need help or have a question? post at [StackOverflow](https://stackoverflow.com/questions/tagged/stone-theme websemantics).
+Star :star: this repository to show support or if you find this project useful. Need help or have a question? post at [StackOverflow](https://stackoverflow.com/questions/tagged/stone-theme websemantics).
 
 *Please don't use the issue trackers for support/questions.*
 
