@@ -15,9 +15,7 @@
 ```
 > Built on the popular open source project [AdminLTE](https://almsaeedstudio.com/themes/AdminLTE/index2.html), this theme is easy to install and customize, with slick ui and intuitive user experience making PyroCMS more pleasurable to work with.
 
-![Stone Theme 1](https://github.com/websemantics/stone-theme/raw/master/docs/stone-2.png "Stone Theme 1")
-
-![Stone Theme 2](https://github.com/websemantics/stone-theme/raw/master/docs/stone-3.png "Stone Theme 2")
+![Stone Theme](https://github.com/websemantics/stone-theme/raw/master/docs/stone-2.png "Stone Theme")
 
 ![Login](https://github.com/websemantics/stone-theme/raw/master/docs/stone-1.png "Login")
 
