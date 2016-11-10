@@ -13,7 +13,7 @@
    /                  | Responsive admin theme for PyroCMS 3
   ╰───────────────────╯ 
 ```
-> Built on the popular open source project [AdminLTE](https://almsaeedstudio.com/themes/AdminLTE/index2.html), this theme is easy to install and customize, with slick ui and intuitive user experience making PyroCMS even more pleasurable to work with.
+> Built on the popular open source project [AdminLTE](https://almsaeedstudio.com/themes/AdminLTE/index2.html), this theme is easy to install and customize, with slick ui and intuitive user experience making PyroCMS 3 even more pleasurable to work with.
 
 ![Stone Theme](https://github.com/websemantics/stone-theme/raw/master/docs/stone-2.png "Stone Theme")
 
