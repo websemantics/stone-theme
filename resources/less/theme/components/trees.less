@@ -1,0 +1,101 @@
+//
+// Tree UI
+// Original: pyrocms/pyrocms-theme
+// --------------------------------------------------
+
+ul.tree {
+    padding-left: 0;
+    list-style: none;
+
+    ul, ol {
+        list-style: none;
+    }
+
+
+    @sidebar-dark-bg: @brand-primary;
+@sidebar-dark-hover-bg: darken(@brand-primary, 2);
+@sidebar-dark-color: lighten(@brand-primary, 45%);
+@sidebar-dark-hover-color: #fff;
+
+
+
+    li {
+        .card {
+            border: 0;
+            min-height: 0;
+            margin: 0 0 9px 0;
+            padding: 0 5px 0 0;
+            border-left: 3px solid darken(@brand-primary, 5);
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+
+            .small {
+                font-size: 100%;
+            }
+            .handle {
+                cursor: move;
+                line-height: 0.7;
+                padding: 12px;
+                border: 0;
+                border-radius: 0;
+                background: lighten(@brand-primary, 5);
+                color: @white;
+                &:before {
+                    content: "\f047";
+                }
+                &:active {
+                    -webkit-box-shadow: none; 
+                    box-shadow: none; 
+                }
+                &:hover {
+                    background: lighten(@brand-primary, 10);
+                }
+            }
+
+            .buttons {
+                float: right;
+                display: none;
+                margin-top: 5px;
+            }
+
+            > span {
+                margin-left: 6px;
+            }
+
+            &:hover {
+                > .buttons {
+                    display: block;
+                }
+            }
+        }
+
+        &.dragged {
+            opacity: 0.5;
+            position: absolute;
+            margin-bottom: @line-height;
+        }
+
+        &.placeholder {
+            height: 32px;
+            margin-bottom: 9px;
+            border: 2px dashed @gray-light;
+            border-radius: @border-radius;
+        }
+    }
+    @media (max-width: @screen-sm) {
+        li {
+            .card {
+                .buttons {
+                    display: block;
+                    a {
+                        font-size: 0;
+                        .fa {
+                            font-size: 18px !important;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

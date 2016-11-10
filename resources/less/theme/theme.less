@@ -3,6 +3,7 @@
 @import "mixins";
 // Components
 @import "components/skin";
+@import "components/trees";
 @import "components/fullcalendar";
 @import "components/core";
 @import "components/forms";
@@ -81,12 +82,20 @@
 }
 
 .btn-sm, .btn-group-sm > .btn {
-  font-size: 12px!important;
+    font-size: 1.3rem;
+}
+
+.btn-xs, .btn-group-xs > .btn {
+    font-size: 1.2rem;
 }
 
 .container-fluid {
     padding-left: 0;
     padding-right: 0;
+}
+
+.text-faded {
+    color: @gray-light;
 }
 
 .card {
@@ -113,7 +122,6 @@
     list-style: none;
     display: inline-block;
     margin-bottom: 13px;
-    // margin: 4em 1.5em 0 0;
 
     .btn {
         display: inline-block;
