@@ -5,9 +5,9 @@ $(function () {
 
         e.preventDefault();
 
-        bootbox.prompt($(this).data('message'), function (result) {
+        var match = $(e.target).data('match') || 'yes';
 
-            var match = $(e.target).data('match') || 'yes';
+        bootbox.prompt($(this).data('message').replace(':match:', match), function (result) {
 
             if (result === match) {
                 $(e.target).unbind('click')[0].click();
