@@ -1,7 +1,7 @@
 1.0.2
   date: 2016-11-11
   changes:
-  - Fix issue #3, display card label
+  - Fix issue #5, display card label
 
 1.0.1
   date: 2016-11-10
