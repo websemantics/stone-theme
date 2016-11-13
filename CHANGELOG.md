@@ -1,3 +1,8 @@
+1.0.3
+  date: 2016-11-13
+  changes:
+  - More on issue #5, sstop label text to line break
+
 1.0.2
   date: 2016-11-11
   changes:
