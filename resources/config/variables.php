@@ -89,6 +89,23 @@ return [
     'border-radius-lg'      => '0',
     'border-radius-sm'      => '0',
 
+    // Components
+    'line-height-lg'         => (4 / 3),
+    'line-height-sm'         => 1.5,
+
+    'border-radius'         => '0',
+    'border-radius-lg'      => '0',
+    'border-radius-sm'      => '0',
+
+    // Tables
+    'table-cell-padding'    => '0.75rem',
+    'table-sm-cell-padding' => '.3rem',
+
+    'table-bg'        => 'transparent',
+    'table-bg-accent' => '#f9f9f9',
+    'table-bg-hover'  => '#f5f5f5',
+    'table-bg-active' => '#f5f5f5',
+
     // Forms
     'input-padding-x' => '.75rem',
     'input-padding-y' => '.375rem',
@@ -97,7 +114,7 @@ return [
     'input-bg-disabled' => '#eceeef',
 
     'input-color'            => '#3e3e3e',
-    'input-border-color'     => 'red',
+    'input-border-color'     => '#cccccc',
     'input-btn-border-width' => '1px',
     'input-box-shadow'       => 'none',
 

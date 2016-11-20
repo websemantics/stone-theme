@@ -1,6 +1,7 @@
 // Utilities
 @import "variables";
 @import "mixins";
+
 // Components
 @import "components/skin";
 @import "components/trees";
@@ -71,8 +72,8 @@
 .table {
   margin-bottom: 0px;
   tr {
-    td {
-    vertical-align: middle;
+    td, th {
+      vertical-align: middle;
     }
   }
 }
@@ -100,7 +101,6 @@
 
 .card {
     border-radius: 5px;
-    min-height: 60px;
      .navbar {
          min-height: 0;
          margin-bottom: 0;
@@ -112,7 +112,7 @@
     float:right;
   }
   .actions {
-    float:left;
+    display: inline-block;
   }
 }
 

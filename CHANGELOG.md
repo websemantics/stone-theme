@@ -1,3 +1,8 @@
+1.0.4
+  date: 2016-11-20
+  changes:
+  - Fix issue #5, fix issue #7 and few other UI inconsistencies, 
+  
 1.0.3
   date: 2016-11-13
   changes:
