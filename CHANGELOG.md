@@ -1,3 +1,9 @@
+1.0.5
+  date: 2016-11-24
+  changes:
+  - Improve on the theme's variables, `variables.less`.
+  - Fixes to accumodate working with https://github.com/websemantics/lcss2php, in v1.1.
+  
 1.0.4
   date: 2016-11-20
   changes:

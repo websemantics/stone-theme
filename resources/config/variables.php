@@ -1,5 +1,6 @@
 <?php
 
+// @deprecated in 1.1 will remove in 1.2
 return [
 
     // Colors
